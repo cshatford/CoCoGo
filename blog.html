@@ -82,7 +82,7 @@
 						<div class="col-md-8 col-md-offset-2">
 							<h3>Presentation (3/2/2019)</h3>
 							<p>
-								Our team of developers is working very hard in the contruction of CoCoBot. We had some issues with the delivery of the materials for the robot, but we have started 
+								Our team of developers is working very hard in the contruction of CoCoGo. We had some issues with the delivery of the materials for the robot, but we have started 
 								working intensively in the motor control of the two front weels of the robot. 
 							        Our team of developers  show great promise in the construction of this robot. With the necessary materials, and more
 								work, we will bring this robot to the top.
@@ -98,8 +98,8 @@
 							<br>	
 						        <h3>Building The Robot (3/4/2019)</h3>
 							<p>
-								Our team of robot developers went of a field trip to Home Depot in the search for materials to finish the robot body, including a base for the middle pole and cable ties. After acquiring all the necessary materials
-								they did some independent work in the alluminium plates, giving life to CoCoGo. The plates were linked together by placing banboo pieces in between the plates and 
+								Our team of robot developers went on a field trip to Home Depot in the search for materials to finish the robot body, including a base for the middle pole and cable ties. After acquiring all the necessary materials
+								they did some independent work in the aluminum plates, giving life to CoCoGo. The plates were linked together by placing banboo pieces in between the plates and 
 								allumnium poles.
 								<br>
 								<br>
@@ -126,7 +126,7 @@
 							
 						        <h3> 3.5 LED touch screen for raspberry pi (4/1/2019)</h3>
 							<p>
-								We attempted installing a 3.5 inch screen in the raspberry pie, but after hours working on it we still could not get it to work. We were initially botting the pi with a USB
+								We attempted setup a 3.5 inch screen for our Raspberry Pi, but after hours working on it we still could not get it to work. We were initially booting the Pi with a USB
 								and the same procedure found at TrickIKnow using a sd card to reboot the raspberry pi worked. The robot experts finally got the
 								screen to work.
 								<br>
@@ -138,10 +138,10 @@
 							
 						        <h3> AudioVisual (4/7/2019)</h3>
 							<p>
-								Our team of robot developers started experimenting with a Raspberry pi for the audio visual part of the robot. We designed a Bitmoji on an iPhone 10
+								Our team of robot developers started experimenting with a Raspberry Pi for the audio visual part of the robot. We designed a Bitmoji on an iPhone 10
 								and used the new face regonition system to create videos for the tour. After that, we experimented with different python code and media players, and
-								we could play a video from python in the screen. The video was not accesible in the 3.5 LED touch screen implemented in the Raspberry pi, but the screen
-								was still very useful for tests outside. 
+								we could play a video from python on a computer monitor. However, when the same Python script was tun using the smaller touch screen, we ran into some errors, since the pins needed for the code were being used for the screen. Nevertheless, the screen
+								was still very useful for testing outside. 
 								
 							</p>
 								
@@ -159,10 +159,10 @@
 							<h3> Communication in Between Raspberry pie and Arduino (4/25/2019)</h3>
 							<p>
 								We attempted to send data from the raspberry pie to the Arduino, in order to have the GPS sensor in the raspberry pie signal to the Arduino when to stop moving. 
-								We initally had satisfactory results, but after updating the Arduino IDLE in the raspberry pie, the communication had issues that we could not solve after many
-								hours of work. At this point, we decided to move the GPS sensor to the arduino and do the communication in the opposite order, having the arduino to tell the raspberry
-								pie when to play the tour videos. We sucefully got the communication to work, and we are currently trying to merge the media, gps data collection, and navigation mode
-								working together. 
+								We initally had satisfactory results, but after updating the Arduino IDLE with the Raspberry Pi, there were communication issues that we could not solve after many
+								hours of work. At this point, we decided to move the GPS sensor to the Arduino and do the communication in the opposite order, having the Arduino tell the raspberry
+								Pi when to play the tour videos. We successfully got the communication to work, and we are currently trying to merge the media, GPS data collection, and navigation
+								together. 
 							</p>
 								
 							<br>		
@@ -170,10 +170,10 @@
 							<h3> Media and Movement Outdoors (5/3/2019)</h3>
 							<p>
 								The GPS sensory data did not work very well when implemented with the motor movement code. The code had a certain delay due to the GPS data collection, and the robot would have
-								a non-constant movement. We decided to use a separate arduino to controll the media, and not merge the GPS controll for movement. The GPS sensor was only implemented for media purposes.
-								In the last few days before the first grand tour, we spend a lot of time trying to get CoCoGo to navigate on the proposed tour path, since there are no walls or obstacles outside to keep
-								CoCoGo on the path just with distance sensors. We intended to get CoCoGo to go on a straight path but the challenging terrain made it very difficult. There is still work to be done with 
-								the robot's locomotion, specially trying to use the GPS for locomotion as well, but with the help of the robot's experts, CoCoGo sucefully gave her first tour with the precense of the president
+								a non-constant movement. We decided to use a separate Arduino to control the media, and not merge the GPS data collection with locomotion commands. Thus, the GPS sensor is not only implemented for media purposes and has no say in locomotion.
+								In the last few days before the first grand tour, we spend a lot of time trying to get CoCoGo to navigate on the proposed tour path, since there are no walls or obstacles outside, then the Ping sensors that allowed CoCoGo to navigate the hallway do not keep it on the path outside.
+								We intended to get CoCoGo to go on a straight path but the challenging terrain made it very difficult. Initially, we intended to use the GPS longitudinal data to keep CoCoGo from drifting off the path, but with the GPS data and locomotion no longer on the same chip, we could no longer do this. That being said, there is still work to be done with 
+								the robot's locomotion, but with the help of the robot's experts, CoCoGo successfully gave her first tour in the precense of the president
 								of Connecticut College. CoCoGo feels truly honored. 
 							</p>
 								
